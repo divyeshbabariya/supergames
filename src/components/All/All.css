@@ -1,0 +1,143 @@
+.cards{
+    float:left;
+    border-radius: 30px;
+}
+.cards:hover img{
+    transform: scale(1.05);
+    
+}
+.cards .image{
+    overflow:hidden;
+    
+}
+.cards img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+    margin:0;
+    padding:0;
+    transition:0.5s;
+}
+
+
+.cards .detail{
+  
+    border-radius: 0 0 10px 10px;
+}
+
+.cards .detail p{
+    color:#fff;    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ margin:0;
+ padding:0;
+  
+}
+
+.btnnav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.btnnav p{
+   font-size:20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-right:20px;
+  height:100%;
+
+}
+
+.btnnav .navs{
+    margin-right:40px;
+}
+
+.popup{
+  position:fixed;
+  top:0;
+
+  left:50%;
+  transform:translateX(-50%);
+ min-height:100vh;
+  width:100%;
+overflow:scroll;
+background-color:rgba(0, 0, 0, 0.9);
+z-index: 2;
+}
+.popup .title{
+    color:yellow;
+    font-size:50px;
+}
+
+.popup p.gamedetail{
+    font-size:25px;
+    color:#fff;
+    line-height: 30px;
+}
+
+.popup a{
+    text-decoration: none;
+}
+
+.popup button{
+    padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   border-style:none;
+   width:200px;
+   height:50px;
+   border-radius: 10px;
+   color:#fff;
+}
+
+.popup .screenimg{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.popup .screenimg img{
+    width:300px;
+}
+
+.windowhandle{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:4;
+    font-size:40px;
+    color:#fff;
+}
+
+.cardcover{
+    width:0%;
+    height:0%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:1;
+    transition:0.5s;
+    border-radius:5px 5px 0 0;
+   display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image:hover .cardcover{
+    height:100%;
+    width:100%;
+ 
+}
+
+.popup .startbtn{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    border:5px solid #fff;
+    outline:2px solid #fff;
+    outline-offset: 5px;;
+}
+

@@ -1,0 +1,101 @@
+.head{
+    background-color:#3f51b5;
+
+}
+span{
+    font-size:25px;
+}
+
+.top{
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+
+.header i{
+    font-size:20px;
+    margin-right: 5px;
+}
+
+.header .navbtns{
+    flex-wrap: wrap;
+    margin:10px;
+}
+
+.dummy{
+    height:80px;
+    width:100%;   
+}
+
+
+.btnnav{
+    display: flex;
+}
+
+.btnnav .togglebtn{
+    color:#fff;
+    font-size:30px;
+    position:absolute;
+    right:0px;
+    display: none;
+   
+}
+
+.togmenu{
+    background-color:#3f51b5;
+    position:fixed;
+    width:200px;
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-end;
+    display:none;
+}
+
+
+.togmenu .menubox .navs i{
+margin-right:15px;
+}
+
+.togmenu .menubox .navs p{
+    font-size:20px;
+}
+
+
+
+
+
+@media only stcreen and (max-width:1200px){
+    .btnnav .navs{
+        margin-right:20px!important;
+    }
+}
+
+@media only screen and (max-width:995px){
+    .btnnav .navs{
+        display:None!important;
+    }
+
+    .btnnav .togglebtn                  {
+        display: block!important;
+    }
+    .togmenu{
+        display:block;
+    }
+  
+}
+.togmenu .menubox .navs{
+    text-decoration: underline solid #3f51b5;
+}
+
+.togmenu .menubox .active{
+    text-decoration: underline solid #ffffff;
+}
+
+.btnnav .navs{
+    border-bottom:1px solid #3f51b5;
+}
+
+.active{
+   border-bottom-color:#fff!important;
+}
